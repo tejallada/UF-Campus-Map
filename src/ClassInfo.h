@@ -1,11 +1,9 @@
 #pragma once
 
 #include <string>
-#include <unordered_set>
 
-struct Student {
-    std::string name;
-    std::string id;
-    int residence_location_id;
-    std::unordered_set<std::string> class_codes;
+struct ClassInfo {
+    int location_id;
+    std::string start_time; // Optional for bonus
+    std::string end_time;
 };
